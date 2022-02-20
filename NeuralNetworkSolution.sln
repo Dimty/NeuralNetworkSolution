@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuNetworkLib", "NeuNetworkLib\NeuNetworkLib.csproj", "{E87DD149-85DD-4902-8B46-28B344A8399E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F6C7AA3B-50DB-44C2-B95B-3964767076CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{E87DD149-85DD-4902-8B46-28B344A8399E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E87DD149-85DD-4902-8B46-28B344A8399E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E87DD149-85DD-4902-8B46-28B344A8399E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C7AA3B-50DB-44C2-B95B-3964767076CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C7AA3B-50DB-44C2-B95B-3964767076CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C7AA3B-50DB-44C2-B95B-3964767076CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C7AA3B-50DB-44C2-B95B-3964767076CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
