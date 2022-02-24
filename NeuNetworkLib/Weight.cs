@@ -4,21 +4,32 @@ namespace Neuron
 {
     public class Weight
     {
-        private Dictionary<Point, double> _dictionary;
+        private int _amountOfNeuronPreLayer = 0;
+        private int _amountOfNeuronActLayer = 0;
+        private double[] _dictionary;
+        public int Count => _dictionary.Length;
 
-        public Weight()
+        public Weight(int preLayer, int actLayer)
         {
-            _dictionary = new();
+            _amountOfNeuronPreLayer = preLayer;
+            _amountOfNeuronActLayer = actLayer;
+            _dictionary = new double[preLayer * actLayer];
+            InitWeights(new Random().Next() & 0x7FFFFFFF);
         }
 
-        public void AddWeight(int a,int b,double weight)
+
+        public double GetWeightValue(int a, int b)
         {
-            if (a < 0 || b < 0)
+            return _dictionary[a + b * _amountOfNeuronPreLayer];
+        }
+
+        private void InitWeights(int seed)
+        {
+            Random rnd = new Random(seed);
+            for (int i = 0; i < _dictionary.Length; i++)
             {
-                throw new ArgumentException("Arguments can't be less than 0");
+                _dictionary[i] = rnd.NextDouble()-0.5; // [-0.5,0.5)
             }
-            _dictionary.Add(new Point(a,b),weight);
         }
-               
     }
 }
